@@ -8,9 +8,7 @@ function App() {
 
   return (
     <div className="w-screen h-screen min-w-0 min-h-0 flex justify-center p-6">
-      <div className="container">
-        <h1 className="text-2xl font-bold">WTG replication</h1>
-      </div>
+      {view}
     </div>
   );
 }
