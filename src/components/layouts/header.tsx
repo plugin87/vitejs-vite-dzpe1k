@@ -6,7 +6,7 @@ export interface NavHeader {
 
 const NavHeader: FC<NavHeader> = ({ onBack }) => {
   return (
-    <nav className="w-full bg-violet-500 px-2 py-2">
+    <nav className="w-full bg-pink-500 px-2 py-2">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
