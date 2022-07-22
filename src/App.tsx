@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Login from './components/pages/login';
 
 type AppView = 'main' | 'login' | 'settings';
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div className="w-screen h-screen min-w-0 min-h-0 flex justify-center p-6">
-      {view}
+      {view === 'login' && <Login setView={setView} />}
     </div>
   );
 }
