@@ -1,4 +1,5 @@
 import { Dispatch, FC, SetStateAction } from 'react';
+import NavHeader from '../layouts/header';
 
 export interface MainProps {
   setView: Dispatch<SetStateAction<any>>;
@@ -6,17 +7,13 @@ export interface MainProps {
 
 const Main: FC<MainProps> = ({ setView }) => {
   return (
-    <div>
-      Main{' '}
-      <a
-        href="#"
-        onClick={(e) => {
-          e.preventDefault();
+    <div className="w-full main-content flex justify-center items-center flex-col p-6">
+      <NavHeader
+        onBack={() => {
           setView('login');
         }}
-      >
-        Login
-      </a>
+      />
+      <main>Main</main>
     </div>
   );
 };
