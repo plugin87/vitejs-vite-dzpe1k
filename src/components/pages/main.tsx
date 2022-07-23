@@ -16,7 +16,16 @@ const Main: FC<MainProps> = ({ setView }) => {
       />
       <main> 
         <div className="p-4">
+          <div className="flex pb-5">
           <label htmlFor="">Show/Hide traits</label>
+          </div>
+          <div className="flex pb-5">
+          <label htmlFor="">Trait Normalization</label>
+          </div>
+          <div className="flex pb-5 ">
+          <label htmlFor="">Show/ Hide Widget</label>
+          </div>
+         
 
 
 
