@@ -1,6 +1,7 @@
 import { Dispatch, FC, SetStateAction } from 'react';
 import NavHeader from '../layouts/header';
-import 'flowbite';
+import { Switch } from '@headlessui/react';
+
 
 export interface MainProps {
   setView: Dispatch<SetStateAction<any>>;
@@ -14,25 +15,19 @@ const Main: FC<MainProps> = ({ setView }) => {
           setView('login');
         }}
       />
-      <main> 
+      <main>
         <div className="p-4">
           <div className="flex pb-5">
-          <label htmlFor="">Show/Hide traits</label>
+            <label htmlFor="">Show/Hide traits</label>
           </div>
           <div className="flex pb-5">
-          <label htmlFor="">Trait Normalization</label>
+            <label htmlFor="">Trait Normalization</label>
           </div>
           <div className="flex pb-5 ">
-          <label htmlFor="">Show/ Hide Widget</label>
+            <label htmlFor="">Show/ Hide Widget</label>
           </div>
-         
-
-
-
-  
-
         </div>
-         </main>
+      </main>
     </div>
   );
 };
